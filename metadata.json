@@ -1,6 +1,6 @@
 {
   "name": "psreed-awx_operator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Paul Reed",
   "summary": "Simple installation and management of Ansible AWX Operator including a minimal K3S implementation",
   "license": "Apache-2.0",
