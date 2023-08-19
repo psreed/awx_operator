@@ -139,7 +139,7 @@ class awx_operator (
     path    => $awx_source_local_folder,
     command => "${cat} <<EOF | ${kubectl} apply -f -\n${epp('awx_operator/awx-set-admin-password.epp', {
         'admin_user_b64' => base64('encode','admin'),
-        'admin_pass_b64' => base64('encode',$awx_admin_password)
+        'admin_pass_b64' => base64('encode',$awx_admin_password.unwrap)
     })}\nEOF\n",
     unless  => "${kubectl} get secret awx-admin-password -o jsonpath='{.data}' | ${jq} -r '.password' | ${base64} -d | ${grep} ${awx_admin_password}", #lint:ignore:140chars
     require => Exec['Wait for AWX Deployment'],
