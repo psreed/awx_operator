@@ -69,7 +69,7 @@ class awx_operator (
   }
 
   # Ensure required packages exist
-  stdlib::ensure_packages(['git','make','jq','curl'])
+  ensure_packages(['git','make','jq','curl'])
 
   # Create namespace
   exec { 'AWX Namespace':
