@@ -1,30 +1,30 @@
 {
   "name": "psreed-awx_operator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Paul Reed",
-  "summary": "",
+  "summary": "Simple installation and management of Ansible AWX Operator including a minimal K3S implementation",
   "license": "Apache-2.0",
-  "source": "",
-  "dependencies": [
-
-  ],
+  "source": "https://github.com/psreed/awx_operator",
+  "dependencies": [],
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8"
       ]
     },
     {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
-        "7"
+        "8"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "8"
+        "8",
+        "9"
       ]
     },
     {
